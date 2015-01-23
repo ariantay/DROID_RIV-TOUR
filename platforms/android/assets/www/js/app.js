@@ -30,7 +30,7 @@ var app = {
         document.body.appendChild(script);
     },
 	getLandmarksApp: function() {
-		var siteURL = 'https://itunes.apple.com/us/app/riverside-landmarks/id926478584?mt=8'
+		var siteURL = 'https://play.google.com/store/apps/details?id=com.city_of_riverside.landmarks';
 		console.log("inAppBrowser opening: " + siteURL);
 		window.open(siteURL, '_blank', 'location=yes');
 	},
