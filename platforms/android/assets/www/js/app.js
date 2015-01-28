@@ -166,7 +166,7 @@ var app = {
         //unbind previous onclick event
         $('#mapit, #statuedetails_static_map_img').off('click');
 		var statue = app.store.statues[statueID];
-		$('#statuedetails_thumb').attr('src','img/'+statue.urlstring+'_thumb3.jpg');
+		$('#statuedetails_thumb').attr('src','content://org.apache.cordova.xapkreader/img/'+statue.urlstring+'_thumb3.jpg');
 		$('#statuedetails_thumbtext h2').html(statue.name);
         //change images
         $('#statuedetails_imgholder').attr('content://org.apache.cordova.xapkreader/img/'+statue.urlstring+'_1.jpg');
@@ -185,7 +185,7 @@ var app = {
 			audioFile = new Media('/android_asset/www/audio/'+statue.urlstring+'_esp.mp3');
 		}
 		//$('.statuedetails_audioControl').trigger('load');
-		$('#statuedetails_static_map_img').attr('src','img/'+statue.urlstring+'_map.jpg');
+		$('#statuedetails_static_map_img').attr('src','content://org.apache.cordova.xapkreader/img/'+statue.urlstring+'_map.jpg');
         var siteURL = 'http://maps.google.com/maps?' +
             'saddr=' + globalLat + ',' + globalLon + '&' +
             'daddr=' + statue.lat + ',' + statue.lon;
@@ -204,7 +204,7 @@ var app = {
         for (var i=0; i<app.numStatues; i++) {
             var statue = app.store.statues[i];
             html += '<li>';
-            html += '<img src=img/' + statue.urlstring + '_thumb3.jpg>';
+            html += '<img src=content://org.apache.cordova.xapkreader/img/' + statue.urlstring + '_thumb3.jpg>';
             html += '<h3>' + statue.name + '</h3>';
             html += '</li>';
         }
@@ -230,7 +230,7 @@ var app = {
 			//alert("in loop creating markers: " + app.store.statues[markerArray[i]].name);
 			var statue = app.store.statues[markerArray[i]];
 			html += '<li>';
-			html += '<img src=img/' + statue.urlstring + '_thumb3.jpg>';
+			html += '<img src=content://org.apache.cordova.xapkreader/img/' + statue.urlstring + '_thumb3.jpg>';
 			html += '<h3>' + statue.name + '</h3>';
 			html += '</li>';
 		}
