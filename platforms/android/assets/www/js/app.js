@@ -150,11 +150,12 @@ var app = {
 			}
             //$('.audioControl').trigger('load');
 			//change images
-			$('.image_1').attr('src','img/'+statue.urlstring+'_1.jpg');
-			$('.image_2').attr('src','img/'+statue.urlstring+'_2.jpg');
-			$('.image_3').attr('src','img/'+statue.urlstring+'_3.jpg');
-			$('.image_4').attr('src','img/'+statue.urlstring+'_4.jpg');
-			$('.image_5').attr('src','img/'+statue.urlstring+'_5.jpg');
+			//content://org.apache.cordova.xapkreader/image.jpg
+			$('.image_1').attr('src','content://org.apache.cordova.xapkreader/img/'+statue.urlstring+'_1.jpg');
+			$('.image_2').attr('src','content://org.apache.cordova.xapkreader/img/'+statue.urlstring+'_2.jpg');
+			$('.image_3').attr('src','content://org.apache.cordova.xapkreader/img/'+statue.urlstring+'_3.jpg');
+			$('.image_4').attr('src','content://org.apache.cordova.xapkreader/img/'+statue.urlstring+'_4.jpg');
+			$('.image_5').attr('src','content://org.apache.cordova.xapkreader/img/'+statue.urlstring+'_5.jpg');
 		}
         cur_statue = statueID;
 		//app.audioSliderUpdateMedia("audio-seek3");
@@ -168,10 +169,10 @@ var app = {
 		$('#statuedetails_thumb').attr('src','img/'+statue.urlstring+'_thumb3.jpg');
 		$('#statuedetails_thumbtext h2').html(statue.name);
         //change images
-        $('#statuedetails_imgholder').attr('href','img/'+statue.urlstring+'_1.jpg');
-        $('#statuedetails_img_2').attr('href','img/'+statue.urlstring+'_2.jpg');
-        $('#statuedetails_img_3').attr('href','img/'+statue.urlstring+'_3.jpg');
-        $('#statuedetails_img_4').attr('href','img/'+statue.urlstring+'_4.jpg');
+        $('#statuedetails_imgholder').attr('content://org.apache.cordova.xapkreader/img/'+statue.urlstring+'_1.jpg');
+        $('#statuedetails_img_2').attr('content://org.apache.cordova.xapkreader/img/'+statue.urlstring+'_2.jpg');
+        $('#statuedetails_img_3').attr('content://org.apache.cordova.xapkreader/img/'+statue.urlstring+'_3.jpg');
+        $('#statuedetails_img_4').attr('content://org.apache.cordova.xapkreader/img/'+statue.urlstring+'_4.jpg');
 		var language = $('input[name="radio-choice-2"]:checked').val();
 		if (language == 'english'){
 			$('#statuedetails_detailstext p').html(statue.info.english);
