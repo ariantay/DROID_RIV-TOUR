@@ -91,7 +91,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<provider android:authorities=\"org.apache.cordova.xapkreader\" android:exported=\"false\" android:multiprocess=\"true\" android:name=\"org.apache.cordova.xapkreader.XAPKProvider\"><meta-data android:name=\"mainVersion\" android:value=\"1\" /><meta-data android:name=\"patchVersion\" android:value=\"1\" /></provider>",
+                            "xml": "<provider android:authorities=\"org.apache.cordova.xapkreader\" android:exported=\"false\" android:multiprocess=\"true\" android:name=\"org.apache.cordova.xapkreader.XAPKProvider\"><meta-data android:name=\"mainVersion\" android:value=\"120\" /><meta-data android:name=\"patchVersion\" android:value=\"0\" /></provider>",
                             "count": 1
                         }
                     ]
@@ -101,15 +101,15 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<integer name=\"main_version\">1</integer>",
+                            "xml": "<integer name=\"main_version\">120</integer>",
                             "count": 1
                         },
                         {
-                            "xml": "<integer name=\"patch_version\">1</integer>",
+                            "xml": "<integer name=\"patch_version\">0</integer>",
                             "count": 1
                         },
                         {
-                            "xml": "<integer name=\"file_size\">1095520</integer>",
+                            "xml": "<integer name=\"file_size\">19406261</integer>",
                             "count": 1
                         }
                     ]
@@ -131,9 +131,9 @@
             "PACKAGE_NAME": "org.riv.tour"
         },
         "org.apache.cordova.xapkreader": {
-            "MAIN_VERSION": "1",
-            "PATCH_VERSION": "1",
-            "FILE_SIZE": "1095520",
+            "MAIN_VERSION": "120",
+            "PATCH_VERSION": "0",
+            "FILE_SIZE": "19406261",
             "PACKAGE_NAME": "org.riv.tour"
         }
     },

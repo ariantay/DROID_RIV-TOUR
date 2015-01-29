@@ -6,7 +6,7 @@
     <string name="download_failed">Download failed</string>
     <string name="error">Error</string>
     <string name="close">Close</string>
-    <integer name="main_version">1</integer>
-    <integer name="patch_version">1</integer>
-    <integer name="file_size">1095520</integer>
+    <integer name="main_version">120</integer>
+    <integer name="patch_version">0</integer>
+    <integer name="file_size">19406261</integer>
 </resources>
